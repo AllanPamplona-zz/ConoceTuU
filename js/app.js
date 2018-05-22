@@ -14,7 +14,7 @@ var app  = new Framework7({
         firstName: 'John',
         lastName: 'Doe',
       },
-      // Demo products for Catalog section
+      // Demo products for visitados section
       products: [
         {
           id: '1',
@@ -44,9 +44,8 @@ var app  = new Framework7({
           name: 'El sembrador de estrellas',
           description: 'La escultura representa a un sembrador, con un cesto lleno de estrellas en su brazo izquierdo, y depositando una de ellas en el suelo, con su mano derecha.          Según la facultad, representa "la actitud del ingeniero en sembrar la luz, el conocimiento, la búsqueda de la verdad, el progreso, la justicia y la paz."',
           autor: 'Alonso Rios Vanegas'
-        }
-
-      ]
+        },
+      ],
     };
   },
   // App root methods
@@ -61,14 +60,15 @@ var app  = new Framework7({
 
 // Init/Create views
 var homeView = app.views.create('#view-home', {
-  url: '/'
+  url: '/home/'
 });
-var catalogView = app.views.create('#view-catalog', {
-  url: '/catalog/'
-});
-var visitadosView = app.views.create('#view-visitados',{
+var visitadosView = app.views.create('#view-visitados', {
   url: '/visitados/'
 });
+var rutasView = app.views.create('#view-rutas', {
+  url: '/rutas/'
+})
+
 
 
 // Login Screen Demo

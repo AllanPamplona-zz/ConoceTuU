@@ -8,12 +8,12 @@ routes = [
     url: './pages/about.html',
   },
   {
-    path: '/catalog/',
-    componentUrl: './pages/catalog.html',
+    path: '/visitados/',
+    componentUrl: './pages/visitados.html',
   },
   {
-    path: '/visitados/',
-    componentUrl: './pages/visitados.html'
+    path: '/home/',
+    componentUrl: './pages/home.html'
   },
   {
     path: '/product/:id/',

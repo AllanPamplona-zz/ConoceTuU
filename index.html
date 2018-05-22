@@ -18,7 +18,7 @@
   <meta name="theme-color" content="#2196f3">
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
-  <title>ConoceTuU</title>
+  <title>My App</title>
 
   <link rel="stylesheet" href="dist/css/framework7.min.css">
   <link rel="stylesheet" href="css/icons.css">
@@ -33,46 +33,28 @@
       <!-- Tabbar for switching views-tabs -->
       <div class="toolbar tabbar-labels toolbar-bottom-md">
         <div class="toolbar-inner">
-          <a href="#view-rutas" class="tab-link tab-link-active">
-            
+          <a href="#view-home" class="tab-link tab-link-active">
+            <i class="icon f7-icons ios-only">home</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">home_fill</i>
             <i class="icon material-icons md-only">Rutas</i>
             <span class="tabbar-label"></span>
           </a>
           <a href="#view-visitados" class="tab-link">
-            
-            <i class="icon material-icons md-only">visitados</i>
+            <i class="icon f7-icons ios-only">list</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">list_fill</i>
+            <i class="icon material-icons md-only">Visitados</i>
             <span class="tabbar-label"></span>
           </a>
         </div>
       </div>
       <!-- Your main view/tab, should have "view-main" class. It also has "tab-active" class -->
-      <div id="view-rutas" class="view view-main tab tab-active">
-        <!-- Page, data-name contains page name which can be used in page callbacks -->
-        <div class="page" data-name="home">
-          <!-- Top Navbar -->
-          <div class="navbar">
-              <div class="navbar-inner">
-                <div class="title center">ConoceTuU</div>
-              </div>
-            </div>
-
-          <!-- Scrollable page content-->
-          <div class="page-content">
-            <div class="list links-list">
-              <ul>
-                <li><a href="#">Niños</a></li>
-                <li><a href="#">Adultos</a></li>
-                <li><a href="#">Ancianos</a></li>
-                <li><a href="#">Padres</a></li>
-              </ul>
-            </div>
-          </div>   
-        </div>
+      <div id="view-home" class="view view-main tab tab-active">
+        
       </div>
 
-      <!-- Visitados View -->
-      <div id="view-catalog" class="view tab">
-        <!-- Visitados page will be loaded here dynamically from /catalog/ route -->
+      <!-- visitados View -->
+      <div id="view-visitados" class="view tab">
+        <!-- visitados page will be loaded here dynamically from /visitados/ route -->
       </div>
     </div>
 
