@@ -5,3 +5,11 @@
 .ios .tabbar-labels .tab-link.tab-link-active .icon:not(.icon-ios-fill) {
   display: none;
 }
+
+img {
+  width: 320px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
