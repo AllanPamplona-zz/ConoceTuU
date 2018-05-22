@@ -16,6 +16,10 @@ routes = [
     componentUrl: './pages/home.html'
   },
   {
+    path: '/recorridos/',
+    componentUrl: './pages/recorridos.html'
+  },
+  {
     path: '/lugar/:id/',
     componentUrl: './pages/lugar.html',
   },

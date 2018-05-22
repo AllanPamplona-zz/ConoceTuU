@@ -65,7 +65,9 @@ var homeView = app.views.create('#view-home', {
 var visitadosView = app.views.create('#view-visitados', {
   url: '/visitados/'
 });
-
+var recorridosView = app.views.create('#view-recorridos', {
+  url: '/recorridos/'
+})
 
 
 
