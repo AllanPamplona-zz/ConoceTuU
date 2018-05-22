@@ -31,6 +31,21 @@ var app  = new Framework7({
           title: 'Apple iPhone X',
           description: 'Expedita sequi perferendis quod illum pariatur aliquam, alias laboriosam! Vero blanditiis placeat, mollitia necessitatibus reprehenderit. Labore dolores amet quos, accusamus earum asperiores officiis assumenda optio architecto quia neque, quae eum.'
         },
+      ],
+      lugares:[
+        {
+          id: '1',
+          name: 'El Hombre Creador de Energía',
+          description: 'La escultura representa un hombre y una mujer en la cúspide de una flor de concreto. Sus brazos y manos, extendidos hacia arriba, indican la búsqueda del cosmos, de la luz, del conocimiento. La parte inferior se asemeja a un cactus o flor, que encierra la belleza a la vez que representa a la Universidad vista como estructura científica y humanística, en continúo movimiento.',
+          autor: 'Rodrigo Arenas Betancur'
+        },
+        {
+          id:'2',
+          name: 'El sembrador de estrellas',
+          description: 'La escultura representa a un sembrador, con un cesto lleno de estrellas en su brazo izquierdo, y depositando una de ellas en el suelo, con su mano derecha.          Según la facultad, representa "la actitud del ingeniero en sembrar la luz, el conocimiento, la búsqueda de la verdad, el progreso, la justicia y la paz."',
+          autor: 'Alonso Rios Vanegas'
+        }
+
       ]
     };
   },
@@ -51,8 +66,8 @@ var homeView = app.views.create('#view-home', {
 var catalogView = app.views.create('#view-catalog', {
   url: '/catalog/'
 });
-var settingsView = app.views.create('#view-settings', {
-  url: '/settings/'
+var visitadosView = app.views.create('#view-visitados',{
+  url: '/visitados/'
 });
 
 

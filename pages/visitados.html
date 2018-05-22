@@ -1,0 +1,28 @@
+<template>
+    <div class="page" data-name="visitados">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="title center">ConoceTuU</div>
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="list links-list">
+          <ul>
+            {{#each lugares}}
+              <li><a href="/lugar/{{id}}/">{{name}}</a></li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </template>
+  <script>
+    return {
+      data: function () {
+        return {
+          lugares: this.$root.lugares,
+        };
+      }
+    };
+  </script>
+  
