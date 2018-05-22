@@ -16,8 +16,8 @@ routes = [
     componentUrl: './pages/home.html'
   },
   {
-    path: '/product/:id/',
-    componentUrl: './pages/product.html',
+    path: '/lugar/:id/',
+    componentUrl: './pages/lugar.html',
   },
   {
     path: '/settings/',

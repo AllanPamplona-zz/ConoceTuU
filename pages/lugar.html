@@ -1,0 +1,37 @@
+<template>
+  <div class="page" data-name="catalog">
+    <div class="navbar">
+      <div class="navbar-inner sliding">
+        <div class="left">
+          <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span class="ios-only">Back</span>
+          </a>
+        </div>
+        <div class="title">{{lugar.name}}</div>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="block-title">{{lugar.name}}</div>
+      <div class="block block-strong">
+        {{lugar.description}}
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+  return {
+    data: function () {
+      var lugarId = this.$route.params.id;
+      var currentlugar;
+      this.$root.lugares.forEach(function (lugar) {
+        if (lugar.id === lugarId) {
+          currentlugar = lugar;
+        }
+      });
+      return {
+        lugar: currentlugar,
+      };
+    }
+  };
+</script>
